@@ -100,7 +100,11 @@
             <h1 class="display-1 fw-bolder text-capitalize">
               The Aurora Tours
             </h1>
-            <button class="btn btn-primary px-4 py-2 fs-5 mt-5">
+            <button
+              class="btn btn-primary px-4 py-2 fs-5 mt-5"
+              data-bs-toggle="modal"
+              data-bs-target="#booking-modal"
+            >
               투어 예약
             </button>
           </div>
@@ -116,7 +120,11 @@
             <h1 class="display-1 fw-bolder text-capitalize">
               The Aurora Tours
             </h1>
-            <button class="btn btn-primary px-4 py-2 fs-5 mt-5">
+            <button
+              class="btn btn-primary px-4 py-2 fs-5 mt-5"
+              data-bs-toggle="modal"
+              data-bs-target="#booking-modal"
+            >
               투어 예약
             </button>
           </div>
@@ -142,5 +150,59 @@
       </button>
     </section>
     <!-- 캐로셀 섹션 끝 -->
+
+    <!-- 모달섹션 시작 -->
+    <section class="modal fade" tabindex="-1" id="booking-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">투어 예약</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  id="floatingInput"
+                  class="form-control"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">이메일</label>
+              </div>
+              <div class="form-floating mb-3">
+                <select
+                  id="floatingSelect"
+                  class="form-select"
+                  aria-label="Floating label"
+                >
+                  <option>노르웨이 트롬쇠 -999만원</option>
+                  <option>캐나다 엘로나이프 -899만원</option>
+                  <option>알래스카 페어뱅크스 -789만원</option>
+                  <option>핀란드 이발로 -1299만원</option>
+                </select>
+                <label for="floatingSelect">투어를 선택하세요!</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              취소
+            </button>
+            <button type="button" class="btn btn-primary">결재하기</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 모달섹션 끝 -->
   </body>
 </html>
